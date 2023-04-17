@@ -1,0 +1,5 @@
+<input type="text" name="nombre" [(ngModel)]="nombre">
+<input type="text" name="apellido" [(ngModel)]="apellido">
+<button (click)="registrarUsuario()">Registrar</button>
+<!-- Condicional con ngIf para que el p solo se muestre si registrado es true -->
+<p *ngIf="registrado">{{mensaje}}</p>
